@@ -1,0 +1,17 @@
+net: "/home/oleksandr/Caffe/lines/caffe_models/googlenet_14_09_2016/train_val.prototxt"
+test_iter: 500
+type: "Nesterov"
+test_interval: 1000
+test_initialization: false
+display: 10
+average_loss: 50
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 200000
+gamma: 0.98
+max_iter: 10000000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 10000
+snapshot_prefix: "/home/oleksandr/Caffe/lines/caffe_models/googlenet_14_09_2016/bvlc_googlenet"
+solver_mode: GPU
